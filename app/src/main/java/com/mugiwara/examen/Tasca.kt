@@ -1,7 +1,7 @@
 package com.mugiwara.examen
 
-import Categoria
-import Estat
+import com.mugiwara.examen.Categoria
+import com.mugiwara.examen.Estat
 
 data class Tasca(
     val id: Int,

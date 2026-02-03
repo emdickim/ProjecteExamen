@@ -7,9 +7,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".MainActivity">
+    tools:context=".TasquesFragment">
 
     <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:background="?attr/colorPrimary"
@@ -18,6 +19,7 @@
         app:titleTextColor="@android:color/white" />
 
     <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         app:checkedChip="@id/chipTotes"
@@ -55,10 +57,12 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/fragmentRV"
+        android:id="@+id/recyclerView"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:clipToPadding="false"
         android:padding="8dp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

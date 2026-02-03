@@ -1,6 +1,6 @@
 package com.mugiwara.examen
 // Fragment Tasques
-import TasquesAdapter
+import com.mugiwara.examen.TasquesAdapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.appcompat.widget.Toolbar

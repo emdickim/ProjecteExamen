@@ -1,13 +1,22 @@
 package com.mugiwara.examen
 
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+
 // Adapter per RecyclerView
-class TasquesAdapter : RecyclerView.Adapter<TascaViewHolder>() {
+class TasquesAdapter : RecyclerView.Adapter<TasquesAdapter.TascaViewHolder>() {
+
 
     private var tasques = listOf<Tasca>()
 
     fun setTasques(novesTasques: List<Tasca>) {
         tasques = novesTasques
         notifyDataSetChanged()
+    }
+    class TascaViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TascaViewHolder {
@@ -20,4 +29,12 @@ class TasquesAdapter : RecyclerView.Adapter<TascaViewHolder>() {
         holder.renderitza(tasques[position])
     }
 
+    override fun getItemCount(): Int {
+        TODO("Not yet implemented")
+    }
+
+}
+
+private fun TasquesAdapter.TascaViewHolder.renderitza(tasca: Tasca) {
+    TODO("Not yet implemented")
 }
